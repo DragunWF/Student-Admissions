@@ -1,4 +1,4 @@
-package com.dragunwf.student.admissions.UserInterface;
+package com.dragunwf.app.UserInterface;
 
 public class StudentListMenu extends javax.swing.JFrame {
 

@@ -1,4 +1,4 @@
-package com.dragunwf.student.admissions.Misc;
+package com.dragunwf.app.Misc;
 
 public class Data {
     
