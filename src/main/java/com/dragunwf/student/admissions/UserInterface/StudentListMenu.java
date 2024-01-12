@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package com.dragunwf.student.admissions.UserInterface;
 
-/**
- *
- * @author Darth Wolf
- */
 public class StudentListMenu extends javax.swing.JFrame {
 
     /**
