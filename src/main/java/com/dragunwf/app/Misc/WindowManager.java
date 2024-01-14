@@ -4,27 +4,30 @@ import com.dragunwf.app.UserInterface.ApplyStudentForm;
 import com.dragunwf.app.UserInterface.IntroMenu;
 import com.dragunwf.app.UserInterface.StudentMenu;
 import com.dragunwf.app.UserInterface.ViewStudents;
+import com.dragunwf.app.UserInterface.OfficerMenu;
+import com.dragunwf.app.UserInterface.AdmitStudentForm;
 
 import java.util.HashMap;
 
 public class WindowManager {
     private static HashMap<String, Boolean> windowsOpened;
-    private static IntroMenu introMenu;
-    private static ApplyStudentForm applyStudentForm;
-    private static StudentMenu studentMenu;
-    private static ViewStudents viewStudents;
     
     public static void openIntroMenu() { open("introMenu"); }
     public static void openApplyStudentForm() { open("applyStudentForm"); }
     public static void openStudentMenu() { open("studentMenu"); }
     public static void openViewStudents() { open("viewStudents"); }
+    public static void openOfficerMenu() { open("officerMenu"); }
+    public static void openAdmitStudentForm() { open("admitStudentForm"); }
     
     public static void initialize() {
         windowsOpened = new HashMap<>();
-        windowsOpened.put("introMenu", false);
-        windowsOpened.put("applyStudentForm", false);
-        windowsOpened.put("studentMenu", false);
-        windowsOpened.put("viewStudents", false);
+        String[] windowKeys = {
+            "introMenu", "applyStudentForm", "studentMenu",
+            "viewStudents", "officerMenu", "admitStudentForm"
+        };
+        for (String key : windowKeys) {
+            windowsOpened.put(key, false);
+        }
     }
 
     private static void open(String name) {
@@ -34,24 +37,22 @@ public class WindowManager {
 
         switch (name) {
             case "introMenu" -> { 
-                introMenu = new IntroMenu();
-                introMenu.setVisible(true);
-                introMenu.setResizable(false);
+                setDefault(new IntroMenu());
             }
             case "applyStudentForm" -> {
-                applyStudentForm = new ApplyStudentForm();
-                applyStudentForm.setVisible(true);
-                applyStudentForm.setResizable(false);
+                setDefault(new ApplyStudentForm());
             }
             case "studentMenu" -> {
-                studentMenu = new StudentMenu();
-                studentMenu.setVisible(true);
-                studentMenu.setResizable(false);
+                setDefault(new StudentMenu());
             }
             case "viewStudents" -> {
-                viewStudents = new ViewStudents();
-                viewStudents.setVisible(true);
-                viewStudents.setResizable(false);
+                setDefault(new ViewStudents());
+            }
+            case "admitStudentForm" -> {
+                setDefault(new AdmitStudentForm());
+            }
+            case "officerMenu" -> {
+                setDefault(new OfficerMenu());
             }
             default -> System.out.println("Window name is not recognized!");
         }
@@ -64,5 +65,10 @@ public class WindowManager {
         }
 
         System.out.printf("Opened %sUI\n", name);
+    }
+    
+    private static void setDefault(javax.swing.JFrame window) {
+        window.setVisible(true);
+        window.setResizable(false);
     }
 }
