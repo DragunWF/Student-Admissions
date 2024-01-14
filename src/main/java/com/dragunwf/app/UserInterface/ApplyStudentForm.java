@@ -104,7 +104,7 @@ public class ApplyStudentForm extends javax.swing.JFrame {
                 .addGroup(ApplyStudentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(submitButton)
                     .addComponent(backButton))
-                .addContainerGap(128, Short.MAX_VALUE))
+                .addContainerGap(129, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -132,7 +132,7 @@ public class ApplyStudentForm extends javax.swing.JFrame {
     }//GEN-LAST:event_GWAFieldActionPerformed
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        WindowManager.openViewStudents();
+        WindowManager.openStudentMenu();
         super.dispose();
     }//GEN-LAST:event_backButtonActionPerformed
 
