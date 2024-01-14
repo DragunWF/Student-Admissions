@@ -9,6 +9,10 @@ public class Data {
         return students;
     }
     
+    public static void addStudent(String name, double gwa) {
+        students.add(new Student(name, gwa));
+    }
+    
     public static void addDummyData() {
         Student[] dummyData = {
             new Student("Jack", 2.25),
