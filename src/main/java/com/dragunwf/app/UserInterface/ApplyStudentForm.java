@@ -1,7 +1,7 @@
 package com.dragunwf.app.UserInterface;
 
 import com.dragunwf.app.Misc.Data;
-
+import com.dragunwf.app.Misc.WindowManager;
 
 public class ApplyStudentForm extends javax.swing.JFrame {
 
@@ -132,7 +132,8 @@ public class ApplyStudentForm extends javax.swing.JFrame {
     }//GEN-LAST:event_GWAFieldActionPerformed
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        // TODO add your handling code here:
+        WindowManager.openViewStudents();
+        super.dispose();
     }//GEN-LAST:event_backButtonActionPerformed
 
     private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButtonActionPerformed
