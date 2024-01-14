@@ -130,7 +130,7 @@ public class IntroMenu extends javax.swing.JFrame {
         });
     }
     
-    public static void start() {
+    public void start() {
         main(new String[0]);
     }
 
