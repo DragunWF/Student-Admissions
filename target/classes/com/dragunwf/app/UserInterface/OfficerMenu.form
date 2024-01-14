@@ -61,7 +61,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="164" pref="164" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="ApplyStudentButton" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
+                      <Component id="AdmitStudentButton" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
                       <Component id="ViewStudentsButton" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
                       <Component id="BackButton" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
                   </Group>
@@ -75,7 +75,7 @@
                   <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
                   <Component id="TitleLabel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="ApplyStudentButton" min="-2" max="-2" attributes="0"/>
+                  <Component id="AdmitStudentButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="ViewStudentsButton" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -96,12 +96,12 @@
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="ApplyStudentButton">
+        <Component class="javax.swing.JButton" name="AdmitStudentButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Admit a student"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ApplyStudentButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AdmitStudentButtonActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="ViewStudentsButton">
