@@ -20,8 +20,8 @@ public class IntroMenu extends javax.swing.JFrame {
 
         IntroMenuPanel = new javax.swing.JPanel();
         TitleLabel = new javax.swing.JLabel();
-        StudentButton = new javax.swing.JButton();
-        OfficerButton = new javax.swing.JButton();
+        studentButton = new javax.swing.JButton();
+        officerButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -32,14 +32,14 @@ public class IntroMenu extends javax.swing.JFrame {
         TitleLabel.setText("Which type of user are you?");
         TitleLabel.setToolTipText("");
 
-        StudentButton.setText("Student");
-        StudentButton.addActionListener(new java.awt.event.ActionListener() {
+        studentButton.setText("Student");
+        studentButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                StudentButtonActionPerformed(evt);
+                studentButtonActionPerformed(evt);
             }
         });
 
-        OfficerButton.setText("Admissions Officer");
+        officerButton.setText("Admissions Officer");
 
         javax.swing.GroupLayout IntroMenuPanelLayout = new javax.swing.GroupLayout(IntroMenuPanel);
         IntroMenuPanel.setLayout(IntroMenuPanelLayout);
@@ -53,10 +53,10 @@ public class IntroMenu extends javax.swing.JFrame {
                 .addGroup(IntroMenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(IntroMenuPanelLayout.createSequentialGroup()
                         .addGap(164, 164, 164)
-                        .addComponent(StudentButton, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(studentButton, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(IntroMenuPanelLayout.createSequentialGroup()
                         .addGap(164, 164, 164)
-                        .addComponent(OfficerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(officerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(165, Short.MAX_VALUE))
         );
         IntroMenuPanelLayout.setVerticalGroup(
@@ -65,9 +65,9 @@ public class IntroMenu extends javax.swing.JFrame {
                 .addGap(120, 120, 120)
                 .addComponent(TitleLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(StudentButton)
+                .addComponent(studentButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(OfficerButton)
+                .addComponent(officerButton)
                 .addContainerGap(164, Short.MAX_VALUE))
         );
 
@@ -91,9 +91,9 @@ public class IntroMenu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void StudentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StudentButtonActionPerformed
+    private void studentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_studentButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_StudentButtonActionPerformed
+    }//GEN-LAST:event_studentButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -136,8 +136,8 @@ public class IntroMenu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel IntroMenuPanel;
-    private javax.swing.JButton OfficerButton;
-    private javax.swing.JButton StudentButton;
     private javax.swing.JLabel TitleLabel;
+    private javax.swing.JButton officerButton;
+    private javax.swing.JButton studentButton;
     // End of variables declaration//GEN-END:variables
 }
