@@ -3,7 +3,6 @@ package com.dragunwf.app.UserInterface;
 import com.dragunwf.app.Misc.Data;
 import com.dragunwf.app.Misc.Student;
 import javax.swing.DefaultListModel;
-import javax.swing.ListModel;
 
 public class ViewStudents extends javax.swing.JFrame {
 
