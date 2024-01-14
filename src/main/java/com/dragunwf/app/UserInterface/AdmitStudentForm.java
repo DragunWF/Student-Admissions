@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package com.dragunwf.app.UserInterface;
 
-/**
- *
- * @author Darth Wolf
- */
+import com.dragunwf.app.Misc.WindowManager;
+
 public class AdmitStudentForm extends javax.swing.JFrame {
 
     /**
@@ -26,21 +20,141 @@ public class AdmitStudentForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        ApplyStudentPanel1 = new javax.swing.JPanel();
+        titleLabel1 = new javax.swing.JLabel();
+        subTitleLabel1 = new javax.swing.JLabel();
+        studentField = new javax.swing.JTextField();
+        acceptButton = new javax.swing.JButton();
+        rejectButton = new javax.swing.JButton();
+        backButton2 = new javax.swing.JButton();
+        submitButton2 = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        ApplyStudentPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        titleLabel1.setFont(new java.awt.Font("Segoe UI", 0, 22)); // NOI18N
+        titleLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        titleLabel1.setText("Accept or Reject");
+        titleLabel1.setToolTipText("");
+
+        subTitleLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        subTitleLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        subTitleLabel1.setText("Student Information");
+        subTitleLabel1.setToolTipText("");
+
+        studentField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        studentField.setText("Enter Student Name");
+
+        acceptButton.setText("Accept");
+        acceptButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                acceptButtonActionPerformed(evt);
+            }
+        });
+
+        rejectButton.setText("Reject");
+        rejectButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rejectButtonActionPerformed(evt);
+            }
+        });
+
+        backButton2.setText("Back");
+        backButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backButton2ActionPerformed(evt);
+            }
+        });
+
+        submitButton2.setText("View");
+        submitButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                submitButton2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout ApplyStudentPanel1Layout = new javax.swing.GroupLayout(ApplyStudentPanel1);
+        ApplyStudentPanel1.setLayout(ApplyStudentPanel1Layout);
+        ApplyStudentPanel1Layout.setHorizontalGroup(
+            ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ApplyStudentPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(titleLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 472, Short.MAX_VALUE)
+                    .addComponent(subTitleLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 472, Short.MAX_VALUE))
+                .addContainerGap())
+            .addGroup(ApplyStudentPanel1Layout.createSequentialGroup()
+                .addGap(162, 162, 162)
+                .addGroup(ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(studentField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(ApplyStudentPanel1Layout.createSequentialGroup()
+                        .addGroup(ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(acceptButton)
+                            .addComponent(submitButton2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(backButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rejectButton, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        ApplyStudentPanel1Layout.setVerticalGroup(
+            ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ApplyStudentPanel1Layout.createSequentialGroup()
+                .addGap(87, 87, 87)
+                .addComponent(titleLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(subTitleLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(studentField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(acceptButton)
+                    .addComponent(rejectButton))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(submitButton2)
+                    .addComponent(backButton2))
+                .addContainerGap(132, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(ApplyStudentPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(ApplyStudentPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
+        
+    }//GEN-LAST:event_acceptButtonActionPerformed
+
+    private void rejectButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rejectButtonActionPerformed
+        WindowManager.openViewStudents();
+        super.dispose();
+    }//GEN-LAST:event_rejectButtonActionPerformed
+
+    private void backButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButton2ActionPerformed
+        WindowManager.openViewStudents();
+        super.dispose();
+    }//GEN-LAST:event_backButton2ActionPerformed
+
+    private void submitButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_submitButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +193,20 @@ public class AdmitStudentForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel ApplyStudentPanel;
+    private javax.swing.JPanel ApplyStudentPanel1;
+    private javax.swing.JTextField GWAField;
+    private javax.swing.JButton acceptButton;
+    private javax.swing.JButton backButton;
+    private javax.swing.JButton backButton2;
+    private javax.swing.JTextField nameField;
+    private javax.swing.JButton rejectButton;
+    private javax.swing.JTextField studentField;
+    private javax.swing.JLabel subTitleLabel;
+    private javax.swing.JLabel subTitleLabel1;
+    private javax.swing.JButton submitButton;
+    private javax.swing.JButton submitButton2;
+    private javax.swing.JLabel titleLabel;
+    private javax.swing.JLabel titleLabel1;
     // End of variables declaration//GEN-END:variables
 }
