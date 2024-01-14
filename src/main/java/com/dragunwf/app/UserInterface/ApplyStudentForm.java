@@ -128,7 +128,7 @@ public class ApplyStudentForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void GWAFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GWAFieldActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_GWAFieldActionPerformed
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
@@ -144,8 +144,10 @@ public class ApplyStudentForm extends javax.swing.JFrame {
             Data.addStudent(studentName, Double.parseDouble(studentGWA));
             nameField.setText("Name");
             GWAField.setText("GWA");
+            subTitleLabel.setText("Student has been added!");
         } catch (Exception error) {
             GWAField.setText("Please set a valid GWA!");
+            subTitleLabel.setText("Student Information");
         }
     }//GEN-LAST:event_submitButtonActionPerformed
 
