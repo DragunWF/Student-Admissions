@@ -140,7 +140,6 @@ public class ApplyStudentForm extends javax.swing.JFrame {
         try {
             String studentName = nameField.getText();
             String studentGWA = GWAField.getText();
-            System.out.printf("%s %s\n", studentName, studentGWA);
             Data.addStudent(studentName, Double.parseDouble(studentGWA));
             nameField.setText("Name");
             GWAField.setText("GWA");
