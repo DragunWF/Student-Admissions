@@ -4,6 +4,8 @@
  */
 package com.dragunwf.app.UserInterface;
 
+import com.dragunwf.app.Misc.WindowManager;
+
 /**
  *
  * @author Darth Wolf
@@ -121,7 +123,8 @@ public class StudentMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_ViewStudentsButtonActionPerformed
 
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
-        // TODO add your handling code here:
+        WindowManager.openIntroMenu();
+        super.dispose();
     }//GEN-LAST:event_BackButtonActionPerformed
 
     /**
