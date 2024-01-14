@@ -140,17 +140,11 @@ public class AdmitStudentForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
-        if (Utils.removeStudent(nameField.getText())) {
-            subTitleLabel.setText("Student has been accepted!");
-        } else { 
-        }
+        submitStudent("has been accepted");
     }//GEN-LAST:event_acceptButtonActionPerformed
 
     private void rejectButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rejectButtonActionPerformed
-        if (Utils.removeStudent(nameField.getText())) {
-            subTitleLabel.setText("Student has been rejected!");
-        } else { 
-        }
+        submitStudent("has been rejected");
     }//GEN-LAST:event_rejectButtonActionPerformed
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
