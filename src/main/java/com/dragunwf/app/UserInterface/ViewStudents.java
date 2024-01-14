@@ -14,6 +14,15 @@ public class ViewStudents extends javax.swing.JFrame {
      */
     public ViewStudents() {
         initComponents();
+        DefaultListModel<String> model = new DefaultListModel<>();
+        for (int i = 0, n = Data.getStudents().size(); i < n; i++) {
+            Student student = Data.getStudents().get(i);
+            String name = student.getName();
+            double gwa = student.getGWA();
+            System.out.println(name);
+            model.add(i, String.format("%s | GWA: %s\n", name, gwa));
+        }
+        studentList.setModel(model);
     }
 
     /**
@@ -176,16 +185,6 @@ public class ViewStudents extends javax.swing.JFrame {
     
     public void start() {
         main(new String[0]);
-        Data.addDummyData();
-        DefaultListModel<String> model = new DefaultListModel<>();
-        for (int i = 0, n = Data.getStudents().size(); i < n; i++) {
-            Student student = Data.getStudents().get(i);
-            String name = student.getName();
-            double gwa = student.getGWA();
-            System.out.println(name);
-            model.add(i, String.format("%s | GWA: %s\n", name, gwa));
-        }
-        studentList.setModel(model);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
