@@ -42,14 +42,14 @@ public class StudentMenu extends javax.swing.JFrame {
             }
         });
 
-        ViewStudentsButton.setText("View students applying");
+        ViewStudentsButton.setText("View students");
         ViewStudentsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ViewStudentsButtonActionPerformed(evt);
             }
         });
 
-        BackButton.setText("Back to user selection");
+        BackButton.setText("Go back");
         BackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BackButtonActionPerformed(evt);
@@ -107,11 +107,13 @@ public class StudentMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ApplyStudentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ApplyStudentButtonActionPerformed
-        // TODO add your handling code here:
+        WindowManager.openApplyStudentForm();
+        super.dispose();
     }//GEN-LAST:event_ApplyStudentButtonActionPerformed
 
     private void ViewStudentsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewStudentsButtonActionPerformed
-        // TODO add your handling code here:
+        WindowManager.openViewStudents();
+        super.dispose();
     }//GEN-LAST:event_ViewStudentsButtonActionPerformed
 
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
