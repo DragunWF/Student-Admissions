@@ -68,6 +68,10 @@ public class StudentListMenu extends javax.swing.JFrame {
             }
         });
     }
+    
+    public static void start() {
+        main(new String[0]);
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
