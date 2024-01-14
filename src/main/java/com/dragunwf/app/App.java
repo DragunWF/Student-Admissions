@@ -9,7 +9,7 @@ public class App {
         WindowManager.initialize();
         System.out.println("Inserting data...");
         Data.addDummyData();
-        System.out.println("Initializing App..."); 
+        System.out.println("Initializing App...");
         WindowManager.openIntroMenu();
     }
 }
