@@ -106,7 +106,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="ViewStudentsButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="View students applying"/>
+            <Property name="text" type="java.lang.String" value="View students"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ViewStudentsButtonActionPerformed"/>
@@ -114,7 +114,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="BackButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Back to user selection"/>
+            <Property name="text" type="java.lang.String" value="Go back"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BackButtonActionPerformed"/>
