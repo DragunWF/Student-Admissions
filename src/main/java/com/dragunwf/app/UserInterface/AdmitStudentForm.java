@@ -1,6 +1,7 @@
 package com.dragunwf.app.UserInterface;
 
 import com.dragunwf.app.Misc.WindowManager;
+import com.dragunwf.app.Misc.Utils;
 
 public class AdmitStudentForm extends javax.swing.JFrame {
 
@@ -20,31 +21,31 @@ public class AdmitStudentForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        ApplyStudentPanel1 = new javax.swing.JPanel();
-        titleLabel1 = new javax.swing.JLabel();
-        subTitleLabel1 = new javax.swing.JLabel();
-        studentField = new javax.swing.JTextField();
+        AdmitStudentForm = new javax.swing.JPanel();
+        titleLabel = new javax.swing.JLabel();
+        subTitleLabel = new javax.swing.JLabel();
+        nameField = new javax.swing.JTextField();
         acceptButton = new javax.swing.JButton();
         rejectButton = new javax.swing.JButton();
-        backButton2 = new javax.swing.JButton();
-        submitButton2 = new javax.swing.JButton();
+        backButton = new javax.swing.JButton();
+        viewButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        ApplyStudentPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        AdmitStudentForm.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        titleLabel1.setFont(new java.awt.Font("Segoe UI", 0, 22)); // NOI18N
-        titleLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        titleLabel1.setText("Accept or Reject");
-        titleLabel1.setToolTipText("");
+        titleLabel.setFont(new java.awt.Font("Segoe UI", 0, 22)); // NOI18N
+        titleLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        titleLabel.setText("Accept or Reject");
+        titleLabel.setToolTipText("");
 
-        subTitleLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        subTitleLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        subTitleLabel1.setText("Student Information");
-        subTitleLabel1.setToolTipText("");
+        subTitleLabel.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        subTitleLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        subTitleLabel.setText("Student Information");
+        subTitleLabel.setToolTipText("");
 
-        studentField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        studentField.setText("Enter Student Name");
+        nameField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        nameField.setText("Enter Student Name");
 
         acceptButton.setText("Accept");
         acceptButton.addActionListener(new java.awt.event.ActionListener() {
@@ -60,61 +61,61 @@ public class AdmitStudentForm extends javax.swing.JFrame {
             }
         });
 
-        backButton2.setText("Back");
-        backButton2.addActionListener(new java.awt.event.ActionListener() {
+        backButton.setText("Back");
+        backButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backButton2ActionPerformed(evt);
+                backButtonActionPerformed(evt);
             }
         });
 
-        submitButton2.setText("View");
-        submitButton2.addActionListener(new java.awt.event.ActionListener() {
+        viewButton.setText("View");
+        viewButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                submitButton2ActionPerformed(evt);
+                viewButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout ApplyStudentPanel1Layout = new javax.swing.GroupLayout(ApplyStudentPanel1);
-        ApplyStudentPanel1.setLayout(ApplyStudentPanel1Layout);
-        ApplyStudentPanel1Layout.setHorizontalGroup(
-            ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ApplyStudentPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout AdmitStudentFormLayout = new javax.swing.GroupLayout(AdmitStudentForm);
+        AdmitStudentForm.setLayout(AdmitStudentFormLayout);
+        AdmitStudentFormLayout.setHorizontalGroup(
+            AdmitStudentFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AdmitStudentFormLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(titleLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 472, Short.MAX_VALUE)
-                    .addComponent(subTitleLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 472, Short.MAX_VALUE))
+                .addGroup(AdmitStudentFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(titleLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 472, Short.MAX_VALUE)
+                    .addComponent(subTitleLabel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 472, Short.MAX_VALUE))
                 .addContainerGap())
-            .addGroup(ApplyStudentPanel1Layout.createSequentialGroup()
+            .addGroup(AdmitStudentFormLayout.createSequentialGroup()
                 .addGap(162, 162, 162)
-                .addGroup(ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(studentField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(ApplyStudentPanel1Layout.createSequentialGroup()
-                        .addGroup(ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(AdmitStudentFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(nameField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(AdmitStudentFormLayout.createSequentialGroup()
+                        .addGroup(AdmitStudentFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(acceptButton)
-                            .addComponent(submitButton2))
+                            .addComponent(viewButton))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(backButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(AdmitStudentFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(rejectButton, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        ApplyStudentPanel1Layout.setVerticalGroup(
-            ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ApplyStudentPanel1Layout.createSequentialGroup()
+        AdmitStudentFormLayout.setVerticalGroup(
+            AdmitStudentFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(AdmitStudentFormLayout.createSequentialGroup()
                 .addGap(87, 87, 87)
-                .addComponent(titleLabel1)
+                .addComponent(titleLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(subTitleLabel1)
+                .addComponent(subTitleLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(studentField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(nameField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(AdmitStudentFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(acceptButton)
                     .addComponent(rejectButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(ApplyStudentPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(submitButton2)
-                    .addComponent(backButton2))
+                .addGroup(AdmitStudentFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(viewButton)
+                    .addComponent(backButton))
                 .addContainerGap(132, Short.MAX_VALUE))
         );
 
@@ -124,14 +125,14 @@ public class AdmitStudentForm extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(ApplyStudentPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(AdmitStudentForm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(ApplyStudentPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(AdmitStudentForm, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -139,22 +140,28 @@ public class AdmitStudentForm extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void acceptButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptButtonActionPerformed
-        
+        if (Utils.removeStudent(nameField.getText())) {
+            subTitleLabel.setText("Student has been accepted!");
+        } else { 
+        }
     }//GEN-LAST:event_acceptButtonActionPerformed
 
     private void rejectButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rejectButtonActionPerformed
-        WindowManager.openViewStudents();
-        super.dispose();
+        if (Utils.removeStudent(nameField.getText())) {
+            subTitleLabel.setText("Student has been rejected!");
+        } else { 
+        }
     }//GEN-LAST:event_rejectButtonActionPerformed
 
-    private void backButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButton2ActionPerformed
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+        WindowManager.openOfficerMenu();
+        super.dispose();
+    }//GEN-LAST:event_backButtonActionPerformed
+
+    private void viewButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewButtonActionPerformed
         WindowManager.openViewStudents();
         super.dispose();
-    }//GEN-LAST:event_backButton2ActionPerformed
-
-    private void submitButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_submitButton2ActionPerformed
+    }//GEN-LAST:event_viewButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -191,22 +198,24 @@ public class AdmitStudentForm extends javax.swing.JFrame {
             }
         });
     }
+    
+    private void submitStudent(String prompt) {
+        String studentName = nameField.getText();
+        if (Utils.removeStudent(studentName)) {
+            subTitleLabel.setText(String.format("%s %s!", studentName, prompt));
+        } else {
+            subTitleLabel.setText(String.format("%s cannot be found!", studentName));
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel ApplyStudentPanel;
-    private javax.swing.JPanel ApplyStudentPanel1;
-    private javax.swing.JTextField GWAField;
+    private javax.swing.JPanel AdmitStudentForm;
     private javax.swing.JButton acceptButton;
     private javax.swing.JButton backButton;
-    private javax.swing.JButton backButton2;
     private javax.swing.JTextField nameField;
     private javax.swing.JButton rejectButton;
-    private javax.swing.JTextField studentField;
     private javax.swing.JLabel subTitleLabel;
-    private javax.swing.JLabel subTitleLabel1;
-    private javax.swing.JButton submitButton;
-    private javax.swing.JButton submitButton2;
     private javax.swing.JLabel titleLabel;
-    private javax.swing.JLabel titleLabel1;
+    private javax.swing.JButton viewButton;
     // End of variables declaration//GEN-END:variables
 }
