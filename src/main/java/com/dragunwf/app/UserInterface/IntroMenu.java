@@ -1,5 +1,7 @@
 package com.dragunwf.app.UserInterface;
 
+import com.dragunwf.app.Misc.WindowManager;
+
 public class IntroMenu extends javax.swing.JFrame {
 
     /**
@@ -104,7 +106,8 @@ public class IntroMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void studentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_studentButtonActionPerformed
-        
+        WindowManager.openStudentMenu();
+        super.dispose();
     }//GEN-LAST:event_studentButtonActionPerformed
 
     /**
