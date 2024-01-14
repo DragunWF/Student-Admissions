@@ -89,6 +89,10 @@ public class IntroMenu extends javax.swing.JFrame {
             }
         });
     }
+    
+    public static void start() {
+        main(new String[0]);
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel jPanel1;
