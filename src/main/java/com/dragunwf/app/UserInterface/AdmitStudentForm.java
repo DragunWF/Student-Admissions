@@ -68,7 +68,7 @@ public class AdmitStudentForm extends javax.swing.JFrame {
             }
         });
 
-        viewButton.setText("View");
+        viewButton.setText("View Students");
         viewButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viewButtonActionPerformed(evt);
@@ -87,16 +87,14 @@ public class AdmitStudentForm extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(AdmitStudentFormLayout.createSequentialGroup()
                 .addGap(162, 162, 162)
-                .addGroup(AdmitStudentFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(nameField, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(AdmitStudentFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(nameField)
                     .addGroup(AdmitStudentFormLayout.createSequentialGroup()
-                        .addGroup(AdmitStudentFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(acceptButton)
-                            .addComponent(viewButton))
+                        .addComponent(acceptButton)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(AdmitStudentFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(backButton, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rejectButton, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(rejectButton, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(backButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(viewButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         AdmitStudentFormLayout.setVerticalGroup(
@@ -113,10 +111,10 @@ public class AdmitStudentForm extends javax.swing.JFrame {
                     .addComponent(acceptButton)
                     .addComponent(rejectButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(AdmitStudentFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(viewButton)
-                    .addComponent(backButton))
-                .addContainerGap(132, Short.MAX_VALUE))
+                .addComponent(viewButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(backButton)
+                .addContainerGap(97, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
