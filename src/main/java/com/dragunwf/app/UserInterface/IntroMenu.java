@@ -63,7 +63,7 @@ public class IntroMenu extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Marc Plarisan (Leader), Josh Garcia, Miguel Samson | BSIT301");
+        jLabel1.setText("GitHub: DragunWF");
 
         javax.swing.GroupLayout IntroMenuPanelLayout = new javax.swing.GroupLayout(IntroMenuPanel);
         IntroMenuPanel.setLayout(IntroMenuPanelLayout);
