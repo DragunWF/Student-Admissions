@@ -1,6 +1,5 @@
 package com.dragunwf.app;
 
-import com.dragunwf.app.UserInterface.IntroMenu;
 import com.dragunwf.app.Misc.Data;
 import com.dragunwf.app.Misc.WindowManager;
 
