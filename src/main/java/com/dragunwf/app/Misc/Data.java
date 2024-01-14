@@ -4,6 +4,10 @@ import java.util.ArrayList;
 
 public class Data {
     private static ArrayList<Student> students = new ArrayList<>();
+    private static String userType;
+    
+    public static String getUserType() { return userType; }
+    public static void setUserType(String type) { userType = type; }
     
     public static ArrayList<Student> getStudents() {
         return students;
