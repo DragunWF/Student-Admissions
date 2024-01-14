@@ -143,7 +143,7 @@ public class ViewStudents extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        WindowManager.openStudentMenu();
+        WindowManager.openPrevious();
         super.dispose();
     }//GEN-LAST:event_backButtonActionPerformed
 
