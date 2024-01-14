@@ -2,7 +2,10 @@ package com.dragunwf.app.UserInterface;
 
 import com.dragunwf.app.Misc.Data;
 import com.dragunwf.app.Misc.Student;
+import com.dragunwf.app.Misc.WindowManager;
+
 import javax.swing.DefaultListModel;
+import com.dragunwf.app.Misc.WindowManager;
 
 public class ViewStudents extends javax.swing.JFrame {
 
@@ -81,6 +84,11 @@ public class ViewStudents extends javax.swing.JFrame {
 
         backButton.setText("Back");
         backButton.setToolTipText("");
+        backButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -124,6 +132,11 @@ public class ViewStudents extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+        WindowManager.openStudentMenu();
+        super.dispose();
+    }//GEN-LAST:event_backButtonActionPerformed
 
     /**
      * @param args the command line arguments
