@@ -54,6 +54,11 @@ public class IntroMenu extends javax.swing.JFrame {
         });
 
         officerButton.setText("Admissions Officer");
+        officerButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                officerButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout IntroMenuPanelLayout = new javax.swing.GroupLayout(IntroMenuPanel);
         IntroMenuPanel.setLayout(IntroMenuPanelLayout);
@@ -64,13 +69,10 @@ public class IntroMenu extends javax.swing.JFrame {
                 .addComponent(TitleLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(IntroMenuPanelLayout.createSequentialGroup()
+                .addGap(164, 164, 164)
                 .addGroup(IntroMenuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(IntroMenuPanelLayout.createSequentialGroup()
-                        .addGap(164, 164, 164)
-                        .addComponent(studentButton, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(IntroMenuPanelLayout.createSequentialGroup()
-                        .addGap(164, 164, 164)
-                        .addComponent(officerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(studentButton, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(officerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(165, Short.MAX_VALUE))
         );
         IntroMenuPanelLayout.setVerticalGroup(
@@ -109,6 +111,11 @@ public class IntroMenu extends javax.swing.JFrame {
         WindowManager.openStudentMenu();
         super.dispose();
     }//GEN-LAST:event_studentButtonActionPerformed
+
+    private void officerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_officerButtonActionPerformed
+        WindowManager.openOfficerMenu();
+        super.dispose();
+    }//GEN-LAST:event_officerButtonActionPerformed
 
     /**
      * @param args the command line arguments
