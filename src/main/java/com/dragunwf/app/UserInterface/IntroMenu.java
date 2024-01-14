@@ -104,7 +104,7 @@ public class IntroMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void studentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_studentButtonActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_studentButtonActionPerformed
 
     /**
