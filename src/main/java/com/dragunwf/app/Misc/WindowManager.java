@@ -11,6 +11,7 @@ import java.util.HashMap;
 
 public class WindowManager {
     private static HashMap<String, Boolean> windowsOpened;
+    private static String previousWindow = "introMenu";
     
     public static void openIntroMenu() { open("introMenu"); }
     public static void openApplyStudentForm() { open("applyStudentForm"); }
@@ -18,6 +19,7 @@ public class WindowManager {
     public static void openViewStudents() { open("viewStudents"); }
     public static void openOfficerMenu() { open("officerMenu"); }
     public static void openAdmitStudentForm() { open("admitStudentForm"); }
+    public static void openPrevious() { open(previousWindow); }
     
     public static void initialize() {
         windowsOpened = new HashMap<>();
@@ -63,7 +65,10 @@ public class WindowManager {
                 windowsOpened.put(key, false);
             }
         }
-
+        
+        if (!name.equals("viewStudents")) {
+            previousWindow = name;
+        }
         System.out.printf("Opened %sUI\n", name);
     }
     
