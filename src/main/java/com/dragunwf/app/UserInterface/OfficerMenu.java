@@ -22,7 +22,7 @@ public class OfficerMenu extends javax.swing.JFrame {
 
         StudentPanel = new javax.swing.JPanel();
         TitleLabel = new javax.swing.JLabel();
-        ApplyStudentButton = new javax.swing.JButton();
+        AdmitStudentButton = new javax.swing.JButton();
         ViewStudentsButton = new javax.swing.JButton();
         BackButton = new javax.swing.JButton();
 
@@ -35,10 +35,10 @@ public class OfficerMenu extends javax.swing.JFrame {
         TitleLabel.setText("Admissions Officer Menu");
         TitleLabel.setToolTipText("");
 
-        ApplyStudentButton.setText("Admit a student");
-        ApplyStudentButton.addActionListener(new java.awt.event.ActionListener() {
+        AdmitStudentButton.setText("Admit a student");
+        AdmitStudentButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ApplyStudentButtonActionPerformed(evt);
+                AdmitStudentButtonActionPerformed(evt);
             }
         });
 
@@ -67,7 +67,7 @@ public class OfficerMenu extends javax.swing.JFrame {
             .addGroup(StudentPanelLayout.createSequentialGroup()
                 .addGap(164, 164, 164)
                 .addGroup(StudentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ApplyStudentButton, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AdmitStudentButton, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ViewStudentsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -78,7 +78,7 @@ public class OfficerMenu extends javax.swing.JFrame {
                 .addGap(107, 107, 107)
                 .addComponent(TitleLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ApplyStudentButton)
+                .addComponent(AdmitStudentButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(ViewStudentsButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -106,10 +106,10 @@ public class OfficerMenu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ApplyStudentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ApplyStudentButtonActionPerformed
-        WindowManager.openApplyStudentForm();
+    private void AdmitStudentButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdmitStudentButtonActionPerformed
+        WindowManager.openAdmitStudentForm();
         super.dispose();
-    }//GEN-LAST:event_ApplyStudentButtonActionPerformed
+    }//GEN-LAST:event_AdmitStudentButtonActionPerformed
 
     private void ViewStudentsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewStudentsButtonActionPerformed
         WindowManager.openViewStudents();
@@ -157,7 +157,7 @@ public class OfficerMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ApplyStudentButton;
+    private javax.swing.JButton AdmitStudentButton;
     private javax.swing.JButton BackButton;
     private javax.swing.JPanel StudentPanel;
     private javax.swing.JLabel TitleLabel;
